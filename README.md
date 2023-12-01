@@ -22,7 +22,7 @@
 docker-compose -f infra/docker-compose.yml up
 ```
 
-Шаблон заполнения `.env` в [.env.example]()
+Шаблон заполнения `.env` в [.env.example](.env.example)
 
 ## Доступ к админ-панели
 
