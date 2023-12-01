@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} Buy Product {% endblock title%}
+{% block content %}
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ item.name }}</h5>
+      <p class="card-text">{{ item.description }}</p>
+      <div class="card-text">
+        <h5 class="card-text">${{ item.price }}</h5>
+        <a href="{% url 'products:add-order' item.id 'order-view' %}" class="btn btn-primary">Купить</a>
+        <a href="{% url 'products:add-order' item.id 'product-list' %}" class="btn btn-primary">Добавить в корзину</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

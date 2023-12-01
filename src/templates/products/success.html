@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %} Success {% endblock title%}
+{% block content %}
+<div class="alert alert-success" role="alert">Спасибо за ваш заказ<a href="{% url 'products:product-list' %}">Перейти к покупкам</a>
+</div>
+{% endblock content %}

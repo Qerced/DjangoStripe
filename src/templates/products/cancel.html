@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %} Cancel {% endblock title%}
+{% block content %}
+<div class="alert alert-info" role="alert">Оплата заказа не завершена<a href="{% url 'products:product-list' %}">Перейти к покупкам</a>
+</div>
+{% endblock content %}
